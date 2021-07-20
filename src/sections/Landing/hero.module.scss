@@ -1,0 +1,45 @@
+@use '../../styles/settings/custom' as *;
+
+.hero {
+  min-height: 10rem;
+
+  &_item {
+    display: flex;
+    min-height: 10rem;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    background: $purple-light;
+
+    h1,
+    h3 {
+      color: white;
+      text-align: center;
+      white-space: normal;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: normal;
+    }
+  }
+  &_item-btn {
+    color: white;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+    & span {
+      margin-right: 0.5rem;
+    }
+
+    &:focus {
+      color: white;
+    }
+  }
+}

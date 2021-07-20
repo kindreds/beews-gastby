@@ -1,0 +1,14 @@
+@use '../../styles/settings/custom' as *;
+
+.iconButton {
+  color: white;
+  margin: 0 auto;
+
+  & span {
+    margin-right: 0.5rem;
+  }
+
+  &:focus {
+    color: white;
+  }
+}

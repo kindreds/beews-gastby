@@ -1,0 +1,49 @@
+@use '../../styles/settings/custom' as *;
+
+.light {
+  background: $bg-gray;
+
+  h2,
+  p {
+    color: $brown-letter;
+  }
+}
+
+.dark {
+  background: $brown-dark;
+
+  h2,
+  p {
+    color: $gray-200;
+  }
+}
+
+.commonSection {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-block: 2rem;
+  flex-direction: column;
+
+  &_content {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    flex-direction: column;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+  }
+
+  &_img {
+    overflow: hidden;
+    border-radius: 0.8rem;
+  }
+}

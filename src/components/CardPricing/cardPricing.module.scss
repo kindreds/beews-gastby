@@ -1,0 +1,36 @@
+@use '../../styles/settings/custom' as *;
+
+.card_pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  padding-inline: 2rem;
+  background-color: $primary;
+
+  h1,
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &-box {
+    margin-bottom: 1rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    background-color: white;
+
+    h3 {
+      margin: 0;
+    }
+  }
+}
